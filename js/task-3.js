@@ -1,5 +1,7 @@
 function checkForSpam(message) {
-  if(message.toUpperCase().includes("SPAM") || message.toUpperCase().includes("SALE"))
+  const check1 = "spam";
+  const check2 = "sale";
+  if(message.toUpperCase().includes(check1.toUpperCase()) || message.toUpperCase().includes(check2.toUpperCase()))
   {
     return true;
   } else {
